@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<title>POOMI INNER WEARS</title>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- tiny style for placeholder images and logo -->
+	<style>
+		.img-missing { display:block; width:100%; height:auto; background:#f3f4f6; color:#6b7280; object-fit:contain; }
+		.brand { display:flex; align-items:center; gap:0.75rem; }
+		.brand-logo { height:48px; width:auto; display:block; max-width:160px; }
+		.brand-text { font-weight:700; display:none; }
+	</style>
+</head>
+<body>
+	<header class="site-header">
+		<div class="container header-inner">
+			<div class="brand">
+				<img src="images/logo.JPEG" alt="POOMI INNER WEARS" class="brand-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline'">
+				<span class="brand-text">POOMI INNER WEARS</span>
+			</div>
+			<nav class="main-nav" aria-label="Primary">
+				<a href="index.html">Home</a>
+				<a href="https://ig.me/m/poomi_inners" target="_blank" rel="noopener">Collections</a>
+				<a href="#about">About</a>
+				<!-- gallery was removed earlier; point Contact to a dedicated page -->
+				<a href="contact.html">Contact</a>
+			</nav>
+			<a class="btn order" href="https://ig.me/m/poomi_inners" target="_blank" rel="noopener">Order now</a>
+		</div>
+	</header>
+
+	<main>
+		<section id="hero" class="hero">
+			<div class="hero-overlay"></div>
+			<div class="container hero-content">
+				<h1>Enduring comfort daily</h1>
+				<p class="lead">Everyday essentials crafted from 100% cotton</p>
+				<a href="https://www.instagram.com/poomi_inners?igsh=MWt5MWN3ZmhzbzI1dw==" target="_blank" rel="noopener" class="btn btn-outline">Shop Collections</a>
+			</div>
+		</section>
+
+		<section id="about" class="about">
+			<div class="container about-inner">
+				<div class="about-content">
+					<h2>About POOMI</h2>
+					<p>POOMI INNER WEARS crafts skin‑friendly innerwear using 100% breathable cotton. Our pieces are designed for everyday comfort and durability, gentle on your skin while keeping a premium minimalist aesthetic.</p>
+					<a class="btn" href="https://ig.me/m/poomi_inners" target="_blank" rel="noopener">Learn more</a>
+				</div>
+				<div class="about-image">
+					<!-- show the photo at its natural height/width (scaled to container) -->
+					<img src="images/about.JPEG" alt="POOMI innerwear fabric and sewing" loading="eager">
+				</div>
+			</div>
+
+			<!-- photo slider placed below the about content -->
+			<div class="container about-slider">
+				<div class="slider" aria-label="About photos slider">
+					<button class="slider-btn prev" aria-label="Previous slide">&larr;</button>
+					<div class="slider-track">
+						<div class="slide"><img src="images/about.JPEG" alt="POOMI innerwear fabric and sewing" loading="eager"></div>
+						<div class="slide"><img src="images/cotton1.JPEG" alt="Breathable cotton 1" loading="lazy"></div>
+						<div class="slide"><img src="images/cotton2.JPEG" alt="Breathable cotton 2" loading="lazy"></div>
+						<div class="slide"><img src="images/cotton3.JPEG" alt="Breathable cotton 3" loading="lazy"></div>
+						<div class="slide"><img src="images/cotton4.JPEG" alt="Breathable cotton 4" loading="lazy"></div>
+						<div class="slide"><img src="images/cotton5.JPEG" alt="Breathable cotton 5" loading="lazy"></div>
+						<div class="slide"><img src="images/cotton6.JPEG" alt="Breathable cotton 6" loading="lazy"></div>
+					</div>
+					<button class="slider-btn next" aria-label="Next slide">&rarr;</button>
+				</div>
+				<div class="slider-dots" aria-hidden="true"></div>
+			</div>
+		</section>
+
+		<section class="testimonials">
+			<div class="container">
+				<h2>What customers say</h2>
+				<div class="testi-grid">
+					<blockquote>
+						<p>Perfect fit and very soft — it keeps its shape after many washes.</p>
+						<cite>— Eshwaran</cite>
+					</blockquote>
+					<blockquote>
+						<p>Breathable fabric, comfortable all day even in Chennai heat.</p>
+						<cite>— Radhesh</cite>
+					</blockquote>
+					<blockquote>
+						<p>Excellent stitching and durable. Totally worth it.</p>
+						<cite>— Dharshan</cite>
+					</blockquote>
+					<blockquote>
+						<p>Fits well under sarees and lehengas, gentle on the skin.</p>
+						<cite>— Karthik</cite>
+					</blockquote>
+					<blockquote>
+						<p>Lovely fabric — soft, simple, and very comfortable.</p>
+						<cite>— Divya</cite>
+					</blockquote>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="contact container">
+			<h2>Contact us</h2>
+			<p>WhatsApp us to place orders</p>
+			<a class="btn order" href="https://wa.me/9566825923" target="_blank" rel="noopener">WhatsApp now</a>
+		</section>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container">
+			<p>&copy; 2026 POOMI INNER WEARS</p>
+		</div>
+	</footer>
+	<!-- runtime fallback: replace broken images with an inline SVG placeholder -->
+	<script>
+		(function(){
+			const placeholder = 'data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22720%22 height=%22480%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23f3f4f6%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%236b7280%22 font-family=%22Inter,Arial,sans-serif%22 font-size=%2220%22>Image%20not%20found</text></svg>';
+			document.querySelectorAll('img').forEach(img => {
+				// special-case brand logo: show text fallback instead of global placeholder
+				if (img.classList.contains('brand-logo')) {
+					if (img.complete && img.naturalWidth === 0) {
+						img.style.display = 'none';
+						const t = img.nextElementSibling;
+						if (t && t.classList.contains('brand-text')) t.style.display = 'inline';
+					}
+					img.addEventListener('error', () => {
+						img.style.display = 'none';
+						const t = img.nextElementSibling;
+						if (t && t.classList.contains('brand-text')) t.style.display = 'inline';
+					});
+					return;
+				}
+				// handle images already failed to load
+				if (img.complete && img.naturalWidth === 0) {
+					img.src = placeholder;
+					img.classList.add('img-missing');
+				}
+				img.addEventListener('error', () => {
+					if (img.dataset.hasPlaceholder) return;
+					img.dataset.hasPlaceholder = 'true';
+					img.src = placeholder;
+					img.classList.add('img-missing');
+					console.warn('Replaced missing image with placeholder:', img);
+				});
+			});
+		})();
+	</script>
+	<!-- add slider script (after existing placeholder-image script) -->
+	<script>
+		(function () {
+			// slider behavior: buttons + dots + sync on scroll
+			const slider = document.querySelector('.about-slider .slider');
+			if (!slider) return;
+			const track = slider.querySelector('.slider-track');
+			const slides = Array.from(track.querySelectorAll('.slide'));
+			const btnPrev = slider.querySelector('.slider-btn.prev');
+			const btnNext = slider.querySelector('.slider-btn.next');
+			const dotsWrap = document.querySelector('.about-slider .slider-dots');
+
+			// create dots
+			slides.forEach((_, i) => {
+				const d = document.createElement('button');
+				d.className = 'dot';
+				d.dataset.index = i;
+				dotsWrap.appendChild(d);
+			});
+			const dots = Array.from(dotsWrap.children);
+			const updateActive = (idx) => {
+				dots.forEach((d, i) => d.classList.toggle('active', i === idx));
+			};
+
+			const slideWidth = () => slides[0].getBoundingClientRect().width + parseFloat(getComputedStyle(track).gap || 0);
+
+			btnPrev.addEventListener('click', () => track.scrollBy({ left: -slideWidth(), behavior: 'smooth' }));
+			btnNext.addEventListener('click', () => track.scrollBy({ left: slideWidth(), behavior: 'smooth' }));
+
+			dots.forEach(d => d.addEventListener('click', () => {
+				const i = Number(d.dataset.index);
+				track.scrollTo({ left: i * slideWidth(), behavior: 'smooth' });
+			}));
+
+			let ticking = false;
+			track.addEventListener('scroll', () => {
+				if (ticking) return;
+				window.requestAnimationFrame(() => {
+					const nearestIndex = slides.reduce((bestIdx, slide, idx) => {
+						const rect = slide.getBoundingClientRect();
+						const center = rect.left + rect.width / 2;
+						const containerCenter = track.getBoundingClientRect().left + track.getBoundingClientRect().width / 2;
+						return Math.abs(center - containerCenter) < Math.abs((slides[bestIdx].getBoundingClientRect().left + slides[bestIdx].getBoundingClientRect().width / 2) - containerCenter) ? idx : bestIdx;
+					}, 0);
+					updateActive(nearestIndex);
+					ticking = false;
+				});
+				ticking = true;
+			});
+
+			// initialize active dot
+			updateActive(0);
+		})();
+	</script>
+</body>
+</html>
+
