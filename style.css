@@ -40,7 +40,7 @@ main {
 .btn.btn-outline:hover{background:rgba(255,255,255,0.06);transform:translateY(-3px)}
 
 /* Hero */
-.hero{position:relative;background-image:url('../images/hero.jpg');background-size:cover;background-position:center center;min-height:62vh;display:flex;align-items:center}
+.hero{position:relative;background-image:url('hero.JPEG');background-size:cover;background-position:center center;min-height:62vh;display:flex;align-items:center}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35))}
 .hero-content{position:relative;color:#fff;text-align:center;padding:3rem 1rem;width:100%}
 .hero h1{font-family:"Playfair Display",serif;font-size:1.7rem;margin:0 0 0.5rem}
