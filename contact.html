@@ -1,0 +1,197 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+
+	<title>Contact — POOMI INNER WEARS</title>
+
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+	<header class="site-header">
+
+		<div class="container header-inner">
+
+			<div class="brand">
+
+				<img src="images/logo.JPEG" alt="POOMI INNER WEARS" class="brand-logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='inline'">
+
+				<span class="brand-text">POOMI INNER WEARS</span>
+
+			</div>
+
+			<nav class="main-nav" aria-label="Primary">
+
+				<a href="index.html">Home</a>
+
+				<a href="https://ig.me/m/poomi_inners" target="_blank" rel="noopener">Collections</a>
+
+				<a href="index.html#about">About</a>
+
+				<a href="contact.html" aria-current="page">Contact</a>
+
+			</nav>
+
+			<a class="btn order" href="https://ig.me/m/poomi_inners" target="_blank" rel="noopener">Order now</a>
+
+		</div>
+
+	</header>
+
+
+
+	<main>
+
+		<section class="contact container contact-page">
+
+			<h1>Contact us</h1>
+
+			<p>WhatsApp or send us a message — we'll respond ASAP.</p>
+
+
+
+			<div class="contact-grid">
+
+				<form class="contact-form" action="mailto:poomi@example.com" method="post" enctype="text/plain">
+
+					<label>
+
+						Name
+
+						<input type="text" name="name" required>
+
+					</label>
+
+					<label>
+
+						Email
+
+						<input type="email" name="email" required>
+
+					</label>
+
+					<label>
+
+						Message
+
+						<textarea name="message" rows="6" required></textarea>
+
+					</label>
+
+					<button class="btn order" type="submit">Send message</button>
+
+				</form>
+
+
+
+				<div class="contact-cta">
+
+					<h3>Place an order</h3>
+
+					<p>Quick orders are easiest via WhatsApp.</p>
+
+					<a class="btn order" href="https://wa.me/9566825923" target="_blank" rel="noopener">WhatsApp now</a>
+
+					<p style="margin-top:1rem;color:var(--muted)">Or call: +91 95668 25923</p>
+
+				</div>
+
+			</div>
+
+		</section>
+
+	</main>
+
+
+
+	<footer class="site-footer">
+
+		<div class="container">
+
+			<p>&copy; 2026 POOMI INNER WEARS</p>
+
+		</div>
+
+	</footer>
+
+
+
+	<!-- runtime fallback: replace broken images with an inline SVG placeholder (same as index.html) -->
+
+	<script>
+
+		(function(){
+
+			const placeholder = 'data:image/svg+xml;utf8,<svg xmlns=%22http://www.w3.org/2000/svg%22 width=%22720%22 height=%22480%22><rect width=%22100%25%22 height=%22100%25%22 fill=%22%23f3f4f6%22/><text x=%2250%25%22 y=%2250%25%22 dominant-baseline=%22middle%22 text-anchor=%22middle%22 fill=%22%236b7280%22 font-family=%22Inter,Arial,sans-serif%22 font-size=%2220%22>Image%20not%20found</text></svg>';
+
+			document.querySelectorAll('img').forEach(img => {
+
+				if (img.classList.contains('brand-logo')) {
+
+					if (img.complete && img.naturalWidth === 0) {
+
+						img.style.display = 'none';
+
+						const t = img.nextElementSibling;
+
+						if (t && t.classList.contains('brand-text')) t.style.display = 'inline';
+
+					}
+
+					img.addEventListener('error', () => {
+
+						img.style.display = 'none';
+
+						const t = img.nextElementSibling;
+
+						if (t && t.classList.contains('brand-text')) t.style.display = 'inline';
+
+					});
+
+					return;
+
+				}
+
+				if (img.complete && img.naturalWidth === 0) {
+
+					img.src = placeholder;
+
+					img.classList.add('img-missing');
+
+				}
+
+				img.addEventListener('error', () => {
+
+					if (img.dataset.hasPlaceholder) return;
+
+					img.dataset.hasPlaceholder = 'true';
+
+					img.src = placeholder;
+
+					img.classList.add('img-missing');
+
+					console.warn('Replaced missing image with placeholder:', img);
+
+				});
+
+			});
+
+		})();
+
+	</script>
+
+</body>
+
+</html>
+
+
